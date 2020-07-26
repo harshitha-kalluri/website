@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<script>
+function checkforblank(){
+  if(document.getElementById('userid').value==""){
+    alert('please enter your userid');
+   document.getElementById('userid').style.bordercolor="red";
+    return false;
+  }
+}
+</script>
+<style type="text/css">
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-image:url(https://letterhub.com/wp-content/uploads/2018/05/business-woman-working-on-laptop-in-her-office_free_stock_photos_picjumbo_hnck8984-2210x1474.jpg);
+  background-position:center;
+  background-size:cover;
+  font-family: sans-serif;
+  margin-top:40px;
+}
+.regform{
+       width:800px;
+       background-color:rgb(0,0,0,0.6);
+       margin:auto;
+       color:#FFFFFF;
+       padding:10px 0px 10px 0px;
+       text-align:center;
+     border-radius:15px 15px 0px 0px ;
+      }
+.main{
+  background-color: rgb(0,0,0,0.5);
+  width:800px;
+  margin:auto;
+    }
+     form{
+         padding:10px;
+         }
+  #name
+  {
+    width:100%;
+    height:100px;
+  }
+  .name{
+    margin-left:25px;
+    margin-top:30px;
+    width:125px;
+    color:white;
+    font-size: :18px;
+    font-weight: 700;
+  }
+.userid{
+  position: relative;
+  left:200px;
+  top:-37px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding:0 22px;
+  font-size:16px;
+}
+.email{
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height: 40px;
+  width: 200px;
+  border-radius: 6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#555;
+}
+.password{
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height: 40px;
+  width: 200px;
+  border-radius: 6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#555;
+}
+.code{
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height: 40px;
+  width: 65px;
+  border-radius: 6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#555;
+}
+.number{
+  position:relative;
+  left:150px;
+  top:-37px;
+  line-height: 40px;
+  width: 250px;
+  border-radius: 6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#555;
+}
+.area-code{
+        position: relative;
+        color: #E5E5E5;
+        text-transform: capitalize;
+        font-size: 16px;
+        left: 84px;
+        top:-4px;
+
+}
+.phone-number{
+  position: relative;
+  color: #E5E5E5;
+  text-transform: capitalize;
+  font-size: 16px;
+  left: -150px;
+  top:-4px;
+}
+.Address{
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height: 40px;
+  width: 200px;
+  border-radius: 6px;
+  padding:0 22px;
+  font-size:16px;
+  color:#555;
+}
+button{
+  background-color:#3BAF9F;
+  display:block;
+  margin:20px 0px 0px 20px;
+  text-align: center;
+  border-radius: 12px;
+  border:2px solid #366473;
+  padding:14px 110px;
+  outline:none;
+  color:white;
+  cursor:pointer;
+  transition:0.25px;
+}
+button:hover{
+  background-color:#5390F5;
+}
+
+</style>
+</head>
+<body>
+<div class="regform"><h1>REGISTRATION FORM</h1></div>
+<div class ="main">
+  <form method="post" action="#" onsubmit="return checkforblank()">
+<fieldset>
+      <h2 class ="name">User Id</h2>
+      <input class="userid" type="text" id="userid" name="userid"><br>
+     <h2 class="name">Email</h2>
+     <input class="email" type="email" id="email" name="email">
+
+<h2 class="name">Password</h2>
+<input class="password" type="password" id="password" name="password">
+
+ <h2 class="name">Phone</h2>
+<input class="code" type="text" id="code" name="area_code">
+<label class ="area-code">Area Code</label>
+<input class="number" type="text" id="number" name="phone">
+<label class="phone-number">Phone Number</label>
+
+<h2 class="name">Address</h2>
+<input class="Address" type="text" id="Address" name="Address">
+<button onclick="popUp()">submit</button>
+
+<script>
+  function popUp(){
+        alert(" registration successful");
+  }
+</script>
+
+
+
+</fieldset>
+  </form>
+</body>
+</html>
